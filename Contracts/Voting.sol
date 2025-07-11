@@ -47,6 +47,7 @@ contract Voting {
         emit VotingStarted();
         
     }
+    
 
     function endVoting() public onlyAdmin {
         require(votingStarted, "Voting not started yet");
