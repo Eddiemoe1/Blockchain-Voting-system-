@@ -31,6 +31,7 @@ contract Voting {
 
     constructor() {
         admin = msg.sender;
+
     }
 
     function addCandidate(string memory _name) public onlyAdmin {
@@ -44,6 +45,7 @@ contract Voting {
         require(!votingStarted, "Voting already started");
         votingStarted = true;
         emit VotingStarted();
+        
     }
 
     function endVoting() public onlyAdmin {
