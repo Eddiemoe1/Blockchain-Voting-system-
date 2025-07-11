@@ -32,3 +32,9 @@ contract Lock {
         owner.transfer(address(this).balance);
     }
 }
+
+//         hasVoted[_voter] = false;
+//     }        
+//
+//     function vote(uint _candidateId) public {
+//         require(votingStarted, "Voting not started yet");    
