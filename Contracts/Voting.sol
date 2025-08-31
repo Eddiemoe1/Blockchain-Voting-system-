@@ -10,9 +10,8 @@ contract Voting {
         uint id;
         string name;
         uint voteCount;
-    
     }
-    
+
 
     mapping(uint => Candidate) public candidates;
     uint public candidatesCount;
@@ -41,6 +40,7 @@ contract Voting {
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
         emit CandidateAdded(candidatesCount, _name);
     }
+    
 
     function startVoting() public onlyAdmin {
         require(!votingStarted, "Voting already started");
