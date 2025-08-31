@@ -40,7 +40,7 @@ contract Voting {
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
         emit CandidateAdded(candidatesCount, _name);
     }
-    
+
 
     function startVoting() public onlyAdmin {
         require(!votingStarted, "Voting already started");
@@ -91,3 +91,4 @@ contract Voting {
         winnerVotes = candidates[winningCandidateId].voteCount;
     }
 }
+
