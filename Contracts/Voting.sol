@@ -12,6 +12,7 @@ contract Voting {
         uint voteCount;
     
     }
+    
 
     mapping(uint => Candidate) public candidates;
     uint public candidatesCount;
