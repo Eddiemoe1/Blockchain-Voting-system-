@@ -22,3 +22,4 @@ describe("VotingSystem", function () {
     expect(candidate.voteCount).to.equal(1);
   });
 });
+
